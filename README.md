@@ -1,4 +1,4 @@
-# shisen_rvue
+# Shisen RVue
 
 ## Project setup
 ```

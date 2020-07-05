@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <v-app>
+      <Header :app="app"/>
+      <SnackBar :app="app"/>
+      <v-main>
+        <router-view :app="app"/>
+      </v-main>
+      <Footer :app="app"/>
+    </v-app>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import SnackBar from '@/components/SnackBar'
 
 export default {
-  name: 'App',
+  name: 'ShisenApp',
   components: {
-    HelloWorld
-  }
+    Footer,
+    Header,
+    SnackBar,
+  },
+  data: () => ({
+    app: {
+      title: 'Shisen RVue',
+      project: 'Shisen RVue',
+      version: '0.1.0',
+      log(message) {
+        console.log(message);
+      }
+    },
+    count: 5,
+    snackbar: true,
+  }),
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
