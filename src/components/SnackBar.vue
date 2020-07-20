@@ -12,12 +12,9 @@
 
 <script>
 export default {
-  name: 'ShisenSnackBar',
+  name: 'shisen-snackbar',
   props: {
-    app: {
-      type: Object,
-      required: true,
-    },
+    app: { type: Object, required: true },
   },
   data() {
     return {

@@ -14,18 +14,11 @@
 
 <script>
 export default {
-  name: 'ShisenInputBoolean',
+  name: 'shisen-input-boolean',
   props: {
-    label: {
-      type: String,
-      required: true,
-    },
-    value: {
-      type: Boolean,
-    },
-    change: {
-      type: Function,
-    },
+    label: { type: String, required: true },
+    value: { type: Boolean },
+    change: { type: Function },
   },
   methods: {
     onChange(value) {

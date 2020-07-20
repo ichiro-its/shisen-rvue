@@ -7,25 +7,15 @@
 import InputBoolean from '@/components/InputBoolean'
 
 export default {
-  name: 'ShisenPropertyInputNumber',
+  name: 'shisen-property-input-boolean',
   components: {
     InputBoolean,
   },
   props: {
-    properties: {
-      type: Object,
-      required: true,
-    },
-    propertyName: {
-      type: String,
-      required: true,
-    },
-    label: {
-      type: String,
-    },
-    log: {
-      type: Function,
-    },
+    properties: { type: Object, required: true },
+    propertyName: { type: String, required: true },
+    label: { type: String },
+    log: { type: Function },
   },
   data() {
     if (typeof this.properties !== 'undefined') {

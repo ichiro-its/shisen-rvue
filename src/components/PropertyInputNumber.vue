@@ -7,28 +7,16 @@
 import InputNumber from '@/components/InputNumber'
 
 export default {
-  name: 'ShisenPropertyInputNumber',
+  name: 'shisen-property-input-number',
   components: {
     InputNumber,
   },
   props: {
-    properties: {
-      type: Object,
-      required: true,
-    },
-    propertyName: {
-      type: String,
-      required: true,
-    },
-    label: {
-      type: String,
-    },
-    step: {
-      type: Number,
-    },
-    log: {
-      type: Function,
-    },
+    properties: { type: Object, required: true },
+    propertyName: { type: String, required: true },
+    label: { type: String },
+    step: { type: Number },
+    log: { type: Function },
   },
   data() {
     if (typeof this.properties !== 'undefined') {

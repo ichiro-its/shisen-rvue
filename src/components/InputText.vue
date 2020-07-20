@@ -13,7 +13,7 @@
 
 <script>
 export default {
-  name: 'ShisenInputText',
+  name: 'shisen-input-text',
   props: {
     label: {
       type: String,

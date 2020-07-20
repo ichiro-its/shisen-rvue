@@ -9,12 +9,9 @@
 
 <script>
 export default {
-  name: "ShisenFooter",
+  name: "shisen-footer",
   props: {
-    app: {
-      type: Object,
-      required: true,
-    },
+    app: { type: Object, required: true },
   },
 }
 </script>

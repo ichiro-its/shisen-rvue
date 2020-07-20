@@ -19,21 +19,12 @@
 
 <script>
 export default {
-  name: 'ShisenInputText',
+  name: 'shisen-input-number',
   props: {
-    label: {
-      type: String,
-      required: true,
-    },
-    value: {
-      type: Number,
-    },
-    step: {
-      type: Number,
-    },
-    change: {
-      type: Function,
-    },
+    label: { type: String, required: true },
+    value: { type: Number },
+    step: { type: Number },
+    change: { type: Function },
   },
   methods: {
     onChange(value) {

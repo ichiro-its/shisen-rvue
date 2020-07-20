@@ -8,12 +8,9 @@
 
 <script>
 export default {
-  name: 'ShisenHeader',
+  name: 'shisen-header',
   props: {
-    app: {
-      type: Object,
-      required: true,
-    },
+    app: { type: Object, required: true },
   },
 }
 </script>

@@ -11,18 +11,11 @@
 import Subscription from '@/lib/Subscription'
 
 export default {
-  name: 'ShisenCompressedImage',
+  name: 'shisen-compressed-image',
   props: {
-    rosBridge: {
-      type: Object,
-    },
-    node: {
-      type: Object,
-    },
-    topicName: {
-      type: String,
-      required: true,
-    },
+    rosBridge: { type: Object },
+    node: { type: Object },
+    topicName: { type: String, required: true },
   },
   data() {
     // either rosBridge or node, but not both

@@ -114,7 +114,7 @@ import Properties from '@/lib/Properties'
 import RosBridge from '@/lib/RosBridge'
 
 export default {
-  name: 'ShisenVideoCapturer',
+  name: 'shisen-vide-capturer',
   components: {
     CompressedImage,
     InputText,
@@ -122,10 +122,7 @@ export default {
     PropertyInputNumber,
   },
   props: {
-    app: {
-      type: Object,
-      required: true,
-    },
+    app: { type: Object, required: true },
   },
   data() {
     let rosBridge = new RosBridge({

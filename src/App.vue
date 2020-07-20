@@ -17,23 +17,27 @@ import Header from '@/components/Header'
 import SnackBar from '@/components/SnackBar'
 
 export default {
-  name: 'ShisenApp',
+  name: 'shisen-app',
   components: {
     Footer,
     Header,
     SnackBar,
   },
-  data: () => ({
-    app: {
-      title: 'Shisen RVue',
-      project: 'Shisen RVue',
-      version: '0.1.0',
-      log(message) {
-        console.log(message);
-      }
-    },
-    count: 5,
-    snackbar: true,
-  }),
+  data() {
+    return {
+      app: {
+        title: 'Shisen RVue',
+        project: 'Shisen RVue',
+        version: '0.1.0',
+        log(message) {
+          console.log(message);
+        }
+      },
+      snackbar: true,
+    };
+  },
+  mounted() {
+    this.$router.push('/');
+  },
 }
 </script>
