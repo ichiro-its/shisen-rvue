@@ -1,4 +1,11 @@
-# Version 0.2.0 (in progress)
+# Version 0.2.1 (In Progress)
+
+## Alfi Maulana
+
+- Remove desktop build support using **ElectronJS**.
+- Add PWA support.
+
+# Version 0.2.0 (20/07/2020)
 
 ## Alfi Maulana
 

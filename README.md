@@ -2,27 +2,29 @@
 
 **Shisen RVue** is a vue based monitoring GUI for **Shisen** ROS 2 package.
 
-# Project setup
+# Usage
+
+## Project setup
 
 Use the following command to initialize the project:
 ```
 $ yarn install
 ```
 
-# Compiles and hot-reloads for development
+## Compiles and hot-reloads for development
 
 Use the following command to debug project for development:
 ```
-$ yarn web-serve
-# or
-$ yarn desktop-serve
+$ yarn serve
 ```
 
-# Build for production
+## Build for production
 
-use the following command to build project for production:
+Use the following command to build project for production:
 ```
-$ yarn web-build
-# or
-$ yarn desktop-build
+$ yarn build
 ```
+
+# Changelog
+
+Click [here](./CHANGELOG.md) for more information about the changelog.
